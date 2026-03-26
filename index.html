@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Registration Form</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#2c2460,#6a5acd);
+}
+
+.container{
+    width: 650px;
+    margin: 40px auto;
+    background: #eee;
+    padding: 25px 35px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+h1{
+    font-size:22px;
+    letter-spacing:1px;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.section{
+    background:#dcdcdc;
+    padding:8px 12px;
+    margin-top:25px;
+    font-weight:bold;
+    color:#444;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-size:13px;
+    color:#555;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    box-sizing:border-box;
+}
+
+.row{
+    display:flex;
+    gap:10px;
+}
+
+.row input{
+    flex:1;
+}
+
+.checkbox-group{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-top:10px;
+}
+
+button{
+    margin-top:25px;
+    padding:10px 25px;
+    border:none;
+    background:#111;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#444;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>STUDENT REGISTRATION FORM</h1>
+
+<div class="section">Basic Information</div>
+
+<label>Full Name</label>
+<div class="row">
+<input placeholder="First Name">
+<input placeholder="Middle Name">
+<input placeholder="Last Name">
+</div>
+
+<div class="row">
+<div style="flex:1">
+<label>Student Number</label>
+<input>
+</div>
+<div style="flex:1">
+<label>Year Level</label>
+<select>
+<option>Please Select</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+</div>
+</div>
+
+<div class="row">
+<div style="flex:1">
+<label>Degree Program</label>
+<input>
+</div>
+<div style="flex:1">
+<label>Email</label>
+<input>
+</div>
+</div>
+
+<div class="row">
+<div style="flex:1">
+<label>Phone Number</label>
+<input>
+</div>
+<div style="flex:1">
+<label>Network Provider</label>
+<select>
+<option>Please Select</option>
+<option>Jio</option>
+<option>Airtel</option>
+<option>Vi</option>
+</select>
+</div>
+</div>
+
+<label>Birth Date</label>
+<div class="row">
+<select><option>Month</option></select>
+<select><option>Day</option></select>
+<select><option>Year</option></select>
+</div>
+
+<label>Present Address</label>
+<input placeholder="Street Address">
+<input placeholder="Street Address Line 2">
+<div class="row">
+<input placeholder="City">
+<input placeholder="State">
+</div>
+
+<label>Permanent Address</label>
+<input placeholder="Street Address">
+<input placeholder="Street Address Line 2">
+<div class="row">
+<input placeholder="City">
+<input placeholder="State">
+</div>
+
+<div class="section">Emergency Contact</div>
+
+<div class="row">
+<input placeholder="First Name">
+<input placeholder="Last Name">
+</div>
+
+<label>Relationship</label>
+<input>
+
+<label>Phone</label>
+<input>
+
+<label>Email</label>
+<input>
+
+<div class="section">Academic Background</div>
+
+<label>High School Name</label>
+<input>
+
+<label>Upload CV</label>
+<input type="file">
+
+<label>Other Extra Curricular Activities</label>
+<input>
+
+<div class="section">Other Details</div>
+
+<label>Skills / Talents</label>
+<div class="checkbox-group">
+<label><input type="checkbox"> Acting</label>
+<label><input type="checkbox"> Drawing</label>
+<label><input type="checkbox"> Singing</label>
+<label><input type="checkbox"> Programming</label>
+</div>
+
+<label>Sports</label>
+<div class="checkbox-group">
+<label><input type="checkbox"> Cricket</label>
+<label><input type="checkbox"> Football</label>
+<label><input type="checkbox"> Chess</label>
+<label><input type="checkbox"> Tennis</label>
+</div>
+
+<label>Interests</label>
+<textarea rows="4"></textarea>
+
+<label>Family Monthly Income</label>
+<select>
+<option>Please Select</option>
+<option>Below 1L</option>
+<option>1L - 5L</option>
+<option>5L+</option>
+</select>
+
+<label>Do you have scholarship?</label>
+<input type="radio"> Yes
+<input type="radio"> No
+
+<label>Plan after college</label>
+<select>
+<option>Please Select</option>
+<option>Job</option>
+<option>Higher Study</option>
+<option>Business</option>
+</select>
+
+<label>Suggestions / Comments</label>
+<textarea rows="4"></textarea>
+
+<button>Submit</button>
+
+</div>
+
+</body>
+</html>
